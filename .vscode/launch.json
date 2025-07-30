@@ -9,7 +9,7 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}/nmap",
-			"args": [],
+			"args": [ "-sS", "-Pn", "google.com" ],
 			"stopAtEntry": true,
 			"cwd": "${workspaceFolder}",
 			"environment": [],
