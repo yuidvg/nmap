@@ -69,3 +69,6 @@ libz/configure.log
 !zenmap/share/zenmap/locale/Makefile
 
 .direnv
+predict
+train
+*.so*

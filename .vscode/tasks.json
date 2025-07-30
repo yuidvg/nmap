@@ -2,17 +2,22 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "build_nmap",
-			"command": "make",
+			"label": "make-nmap-executable",
 			"type": "shell",
-			"args": [],
-			"problemMatcher": [
-				"$gcc"
-			],
+			"command": "sudo chown root:wheel ${workspaceFolder}/nmap && sudo chmod +s ${workspaceFolder}/nmap",
+			"group": "build",
 			"presentation": {
-				"reveal": "always"
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
 			},
-			"group": "build"
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": []
 		}
 	]
 }
